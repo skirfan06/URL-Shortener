@@ -122,16 +122,6 @@ Through this project I gained experience with:
 
 ---
 
-## Author
-
-**SK Irfan**
-
-GitHub: https://github.com/skirfan06
-
-LinkedIn: https://www.linkedin.com/in/shaik-irfan-812a392bb/
-
----
-
 ## License
 
 This project is licensed under the MIT License.
