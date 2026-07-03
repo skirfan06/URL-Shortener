@@ -1,86 +1,137 @@
-<h1 align="center">
-  URL-Shortner
-</h1>
+# Smart URL Shortener
 
-<h4 align="center">Creating custom URL shortener With Nodejs</h4>
-<div align="center">
-  <sub>Built with ❤︎ </sub>
-</div>
+A full-stack URL shortening application built using **React**, **Node.js**, **Express.js**, and **MongoDB**. The application allows users to convert long URLs into short, shareable links with automatic redirection and secure URL validation.
 
-</br>
-Building a custom URL shortening service like goo.gl using ExpressJs and Mongodb
+---
 
-## Architecture
+## Features
 
-<img src="sketch/architecture.png" alt="architecture" />
+- 🔗 Shorten long URLs into compact links
+- ✅ URL validation before shortening
+- 🚀 Fast redirection to the original URL
+- 💾 MongoDB database integration
+- 🌐 RESTful API using Express.js
+- 📱 Responsive React user interface
+- 🔒 Efficient backend architecture
 
-## Technologies
+---
 
-- ### Back end
+## Tech Stack
 
-  - [Express](https://expressjs.com/)- Nodejs framwork for building the REST Apis
-  - [Mongodb](http://mongodb.com/)- Document oriented NoSQL database
-  - [Mongoose](https://http://mongoosejs.com)- MongoDB object modeling tool
-  - [Short-id](https://github.com/dylang/shortid)- Short id generator
-  - [Valid-url](https://github.com/ogt/valid-url)- URI validation functions
-  - [Nginx](https://www.nginx.com)- Nginx is event-based and asynchronous web server.
+### Frontend
+- React
+- React Router
+- Materialize CSS
 
-- ### Front end
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- Nginx
 
-  - [React](https://reactjs.org/) - JavaScript library for building user interfaces.
-  - [React-router](https://github.com/ReactTraining/react-router)- Complete routing library for React
-  - [Materialize css](http://materializecss.com/)- Responsive front-end framework based on Material Design
+---
 
-## Getting Started
-
-#### Clone the project
-
-```sh
-# clone it
-git clone https://github.com/muhzi4u/URL-Shortner.git
-cd URL-Shortner
-# Make it your own
-rm -rf .git && git init
-```
-
-#### Run back end
+## Project Structure
 
 ```
-# Move to server folder
-cd server/
-# Install dependencies
+Smart-URL-Shortener/
+│
+├── client/
+├── server/
+├── nginx/
+├── sketch/
+├── .gitignore
+└── README.md
+```
+
+---
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/skirfan06/URL-Shortener.git
+cd URL-Shortener
+```
+
+### Install Backend Dependencies
+
+```bash
+cd server
 yarn install
+```
 
-# Start  server
+### Start Backend
+
+```bash
 yarn run server
 ```
 
-#### Run front end
+### Install Frontend Dependencies
 
-```
-# Move to client folder
-cd client/
-# Install dependencies
+Open another terminal.
+
+```bash
+cd client
 yarn install
-# Start  client
-yarn run start
 ```
 
-## Demo
+### Start Frontend
 
-![NSGIF](https://j.gifs.com/1rnQV0.gif)
+```bash
+yarn start
+```
 
-## Blog
+---
 
-[Creating custom URL shortener with Nodejs](https://codeburst.io/creating-custom-url-shortener-with-nodejs-de10bbbb89c7)
+## Application Workflow
 
-## ☑ TODO
+1. User enters a long URL.
+2. The application validates the URL.
+3. A unique short code is generated.
+4. The URL is stored in MongoDB.
+5. The shortened URL is displayed.
+6. Visiting the short URL redirects the user to the original website.
 
-- [x] Front end app
-- [x] Documentation and Blog
-- [x] Add Redis for caching
-- [ ] Change short code algorithm and check duplicate short codes
+---
+
+## Future Enhancements
+
+- User Authentication
+- QR Code Generation
+- Click Analytics Dashboard
+- Custom Short URLs
+- URL Expiration Support
+- Dark Mode
+
+---
+
+## Learning Outcomes
+
+Through this project I gained experience with:
+
+- REST API Development
+- React Frontend Development
+- Express.js Backend
+- MongoDB Database Integration
+- Routing and URL Redirection
+- Client-Server Architecture
+- Git and GitHub Version Control
+
+---
+
+## Author
+
+**SK Irfan**
+
+GitHub: https://github.com/skirfan06
+
+LinkedIn: https://www.linkedin.com/in/shaik-irfan-812a392bb/
+
+---
 
 ## License
 
-MIT
+This project is licensed under the MIT License.
